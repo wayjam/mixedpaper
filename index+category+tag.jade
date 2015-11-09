@@ -1,0 +1,27 @@
+
+mixin make_posts(posts)
+	for post in posts
+		article.post
+			.content
+				span.date= post.date.format('%Y-%m-%d')
+				h3.title
+					a(href=post.url,title=post.title)= post.title
+				.post_body= post.content.opening or post.content.limit(300)
+
+
+if request.args.pjax=='true'
+	+make_posts(posts)
+else
+	extends base
+	block title
+		title= request.args.s or tags.join('+') or category.title or site.title
+	block content
+		if request.path.strip('/') == 'category'
+			+redirect('/categories')
+		else
+			.list
+				+make_posts(posts)
+			include include/paginator
+
+			#on_loading.hidden
+					i.fa.fa-spinner.fa-spin

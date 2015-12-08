@@ -18,7 +18,6 @@ body {
   color: rgba(0,0,0,0.7);
   background: #fff;
   overflow-x: hidden;
-  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 1.6;
 }
@@ -37,8 +36,9 @@ a:hover {
   border-bottom: 1px solid #6abfa3;
 }
 
-input, textarea, button {
-  font-family: "droid-sans", "stheiti", "microsoft yahei", sans-serif;
+body,select,input, textarea, button {
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+
 }
 
 ::selection {

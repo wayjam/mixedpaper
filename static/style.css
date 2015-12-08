@@ -333,31 +333,30 @@ li.listing_item span.date{
 
 
 .post_body h1, .post_body h2, .post_body h3, .post_body h4, .post_body h5, .post_body h6 {
-  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
   font-weight: 100;
   color: #000;
-  line-height: 1.35;
+  line-height: 1.2;
 }
 
 
 .post_body h1 {
-  font-size: 2em;
-}
-
-.post_body h2{
   font-size: 1.8em;
 }
 
-.post_body h3{
+.post_body h2{
   font-size: 1.6em;
 }
 
-.post_body h4{
+.post_body h3{
   font-size: 1.4em;
 }
 
-.post_body h5, .post_body h6 {
+.post_body h4{
   font-size: 1.2em;
+}
+
+.post_body h5, .post_body h6 {
+  font-size: 1.1em;
 }
 
 

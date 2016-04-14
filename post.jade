@@ -18,8 +18,8 @@ block content
 			.other_posts.clearfix
 				span.pre
 					if pre_one
-						a(href='{{pre_one.url}}#main')= "&lt;" +  pre_one.title
+						a(href='{{pre_one.url}}')= "&laquo;" +  pre_one.title
 				span.next
 					if next_one
-						a(href='{{next_one.url}}#main')=  next_one.title  + "&gt;"
+						a(href='{{next_one.url}}')=  next_one.title  + "&raquo;"
 		include include/comments.jade

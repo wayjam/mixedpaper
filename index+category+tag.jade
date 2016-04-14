@@ -6,7 +6,7 @@ mixin make_posts(posts)
 				span.date= post.date.format('%Y-%m-%d')
 				h3.title
 					a(href=post.url,title=post.title)= post.title
-				.post_body= post.content.opening or post.content.limit(300)
+				.post_body= post.content.opening or post.content.limit(250)
 
 
 if request.args.pjax=='true'
